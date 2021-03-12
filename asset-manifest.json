@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/clamoroso-test/static/css/main.cf48d84e.chunk.css",
+    "main.js": "/clamoroso-test/static/js/main.a4874495.chunk.js",
+    "main.js.map": "/clamoroso-test/static/js/main.a4874495.chunk.js.map",
+    "runtime-main.js": "/clamoroso-test/static/js/runtime-main.f1b6ec67.js",
+    "runtime-main.js.map": "/clamoroso-test/static/js/runtime-main.f1b6ec67.js.map",
+    "static/js/2.e06f2e77.chunk.js": "/clamoroso-test/static/js/2.e06f2e77.chunk.js",
+    "static/js/2.e06f2e77.chunk.js.map": "/clamoroso-test/static/js/2.e06f2e77.chunk.js.map",
+    "index.html": "/clamoroso-test/index.html",
+    "static/css/main.cf48d84e.chunk.css.map": "/clamoroso-test/static/css/main.cf48d84e.chunk.css.map",
+    "static/js/2.e06f2e77.chunk.js.LICENSE.txt": "/clamoroso-test/static/js/2.e06f2e77.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1b6ec67.js",
+    "static/js/2.e06f2e77.chunk.js",
+    "static/css/main.cf48d84e.chunk.css",
+    "static/js/main.a4874495.chunk.js"
+  ]
+}
