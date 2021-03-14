@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "./images/logo.png";
 
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -52,6 +53,13 @@ export default function App() {
     }
   }
 
+  function handleReset() {
+    setCurrentQuestion(0);
+    setScore(0);
+    setShowScore(false);
+  }
+
+  //RENDERING JSX DELL'APP//
   if (showScore && score > 16) {
     return (
       <>
@@ -64,10 +72,16 @@ export default function App() {
             Congratulazioni!
             <br /> Sei un ottimista!
           </div>
+          <button className="button-reset" onClick={() => handleReset()}>
+            Ricomincia
+          </button>
+          <div className="image">
+            <img src={logo} alt="logo" />
+          </div>
         </div>
       </>
     );
-  } else if (showScore && score > 6 && score < 16) {
+  } else if (showScore && score >= 6 && score <= 16) {
     return (
       <>
         <h1>Clamoroso Test</h1>
@@ -78,6 +92,12 @@ export default function App() {
             {score} su {questions.length * 5}. <br />
             <br />
             Beh dai! <br /> Sei una persona realista...
+          </div>
+          <button className="button-reset" onClick={() => handleReset()}>
+            Ricomincia
+          </button>
+          <div className="image">
+            <img src={logo} alt="logo" />
           </div>
         </div>
       </>
@@ -91,7 +111,13 @@ export default function App() {
           <div className="score-section">
             Il tuo punteggio è di: <br /> {score} su {questions.length * 5}. <br />
             <br />
-            Sei sicuro di voler sapere il tuo profilo?
+            Meglio che tu non sappia il tuo profilo...
+          </div>
+          <button className="button-reset" onClick={() => handleReset()}>
+            Ricomincia
+          </button>
+          <div className="image">
+            <img src={logo} alt="logo" />
           </div>
         </div>
       </>
@@ -110,8 +136,13 @@ export default function App() {
           </div>
           <div className="answer-section">
             {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-              <button onClick={() => handleAnswerButtonClick(answerOption.points)}>{answerOption.answerText}</button>
+              <button className="button-answer" onClick={() => handleAnswerButtonClick(answerOption.points)}>
+                {answerOption.answerText}
+              </button>
             ))}
+          </div>
+          <div className="image">
+            <img src={logo} alt="logo" />
           </div>
         </div>
       </>
