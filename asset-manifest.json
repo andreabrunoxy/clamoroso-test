@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/clamoroso-test/static/css/main.cc17879b.chunk.css",
-    "main.js": "/clamoroso-test/static/js/main.432c5e92.chunk.js",
-    "main.js.map": "/clamoroso-test/static/js/main.432c5e92.chunk.js.map",
+    "main.css": "/clamoroso-test/static/css/main.4d79f2f8.chunk.css",
+    "main.js": "/clamoroso-test/static/js/main.0210ec13.chunk.js",
+    "main.js.map": "/clamoroso-test/static/js/main.0210ec13.chunk.js.map",
     "runtime-main.js": "/clamoroso-test/static/js/runtime-main.f1b6ec67.js",
     "runtime-main.js.map": "/clamoroso-test/static/js/runtime-main.f1b6ec67.js.map",
     "static/js/2.e06f2e77.chunk.js": "/clamoroso-test/static/js/2.e06f2e77.chunk.js",
     "static/js/2.e06f2e77.chunk.js.map": "/clamoroso-test/static/js/2.e06f2e77.chunk.js.map",
     "index.html": "/clamoroso-test/index.html",
-    "static/css/main.cc17879b.chunk.css.map": "/clamoroso-test/static/css/main.cc17879b.chunk.css.map",
+    "static/css/main.4d79f2f8.chunk.css.map": "/clamoroso-test/static/css/main.4d79f2f8.chunk.css.map",
     "static/js/2.e06f2e77.chunk.js.LICENSE.txt": "/clamoroso-test/static/js/2.e06f2e77.chunk.js.LICENSE.txt",
+    "static/media/click.a8760bf5.mp3": "/clamoroso-test/static/media/click.a8760bf5.mp3",
     "static/media/logo.32341714.png": "/clamoroso-test/static/media/logo.32341714.png",
-    "static/media/index.css": "/clamoroso-test/static/media/sfondo.45f2a056.jpg"
+    "static/media/index.css": "/clamoroso-test/static/media/sfondo-new.ee6c7b71.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f1b6ec67.js",
     "static/js/2.e06f2e77.chunk.js",
-    "static/css/main.cc17879b.chunk.css",
-    "static/js/main.432c5e92.chunk.js"
+    "static/css/main.4d79f2f8.chunk.css",
+    "static/js/main.0210ec13.chunk.js"
   ]
 }
