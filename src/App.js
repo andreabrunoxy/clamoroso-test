@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { questions } from './data/data';
 import logo from './assets/images/logo.png';
 import click from './assets/sounds/click.mp3';
@@ -8,10 +8,7 @@ export default function App() {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
   const [modalIsOpen, setModalIsOpen] = useState(true);
-
-  useEffect(() => {
-    setModalIsOpen(true);
-  }, []);
+  const [fadeout, setFadeout] = useState(false);
 
   function handleAnswerButtonClick(points) {
     new Audio(click).play();
@@ -33,17 +30,24 @@ export default function App() {
     setShowScore(false);
   }
 
+  function closeModal() {
+    setFadeout(true);
+    setTimeout(() => {
+      setModalIsOpen(false);
+    }, 500);
+  }
+
   //RENDERING JSX DELL'APP//
   return (
     <>
       {modalIsOpen && (
-        <div className="modal">
+        <div className={fadeout ? 'modal close' : 'modal'}>
           <div className="modal-content">
             <h1>TEST</h1>
             <h2>Sei pessimista o ottimista?</h2>
             <p>Rispondi a tutte le domande e alla fine scoprirai il risultato.</p>
             <p>Buon divertimento!</p>
-            <button className="button-modal" onClick={() => setModalIsOpen(false)}>
+            <button className="button-modal" onClick={() => closeModal()}>
               Inizia il test!
             </button>
             <div className="image">
